@@ -25,7 +25,6 @@ export default ({ setVoice }) => (
           { end: 10, label: '<$10' },
           { start: 10, end: 100, label: '$10-$100' },
           { start: 100, end: 500, label: '$100-$500' },
-          { start: 500, label: '>$500' }
         ]}
       />
     </div>
@@ -34,7 +33,6 @@ export default ({ setVoice }) => (
       <h3 className="isoAlgoliaSidebarTitle" style={{ marginBottom: 10 }}>
         Slider
       </h3>
-      <RangeSlider attributeName="price" />
     </div>
 
     <div className="isoAlgoliaSidebarItem">
@@ -43,7 +41,6 @@ export default ({ setVoice }) => (
     </div>
 
     <div className="isoAlgoliaSidebarItem">
-      <h3 className="isoAlgoliaSidebarTitle">Brand</h3>
       <RefinementList attributeName="brand" withSearchBox />
     </div>
 

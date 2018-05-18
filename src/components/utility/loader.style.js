@@ -25,19 +25,10 @@ const LoaderComponent = styled.div`
     animation: svgSpinner 1.4s linear infinite;
   }
 
-  .isoContentLoaderCircle {
-    animation: svgSpinnerCircle 1.4s ease-in-out infinite;
-    stroke-dasharray: 80px, 200px;
-    stroke-dashoffset: 0px;
-    stroke: ${palette("primary", 0)};
-    stroke-linecap: round;
+  @media only screen and (min-width: 768px) and (max-width: 1220px) {
+    width: calc(100% - 80px);
   }
 
-  @keyframes svgSpinner {
-    100% {
-      transform: rotate(360deg);
-    }
-  }
   @keyframes svgSpinnerCircle {
     0% {
       stroke-dasharray: 1px, 200px;

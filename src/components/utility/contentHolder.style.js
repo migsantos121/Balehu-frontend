@@ -12,11 +12,6 @@ const WDContentHolderWrapper = styled.div`
   }
 
   .demoBtnsWrapper {
-    &:nth-child(1) {
-      margin-left: ${props => (props['data-rtl'] === 'rtl' ? '0' : '70px')};
-      margin-right: ${props => (props['data-rtl'] === 'rtl' ? '70px' : '0')};
-      white-space: nowrap;
-    }
 
     &:nth-child(2) {
       width: 70px;

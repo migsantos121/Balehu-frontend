@@ -27,14 +27,12 @@ const WDSidebarWrapper = styled.div`
   .ais-SearchBox__root {
     width: 100%;
     margin-bottom: 15px;
-    max-width: 100%;
 
     .ais-SearchBox__input {
       padding: ${props =>
         props["data-rtl"] === "rtl" ? "0 46px 0 36px" : "0 36px 0 46px"};
       border: 1px solid ${palette("border", 0)};
       ${borderRadius("3px")};
-      ${boxShadow()};
     }
 
     .ais-SearchBox__submit {
